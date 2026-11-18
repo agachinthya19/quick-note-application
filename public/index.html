@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Note Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>📝 Quick Notes</h1>
+            <p>Write your thoughts. Save your ideas.</p>
+        </header>
+
+        <section class="note-form">
+            <h2>Create a New Note</h2>
+
+            <form id="noteForm">
+                <input
+                    type="text"
+                    id="title"
+                    placeholder="Enter note title"
+                    maxlength="100"
+                    required
+                >
+
+                <textarea
+                    id="content"
+                    placeholder="Write your note here..."
+                    rows="5"
+                    maxlength="5000"
+                    required
+                ></textarea>
+
+                <button type="submit" id="addButton">
+                    + Add Note
+                </button>
+            </form>
+
+            <p id="message" role="status"></p>
+        </section>
+
+        <section class="notes-section">
+            <h2>Your Notes</h2>
+            <div id="notesList"></div>
+        </section>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
